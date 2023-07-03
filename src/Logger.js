@@ -16,7 +16,8 @@ const loginFunction = (state,action)=>{
 
      if(action.type === "doneEmail")
      {
-        console.log("Done email")
+        const stuff = action.current
+        console.log(stuff.value)
      }
      return state
 }
@@ -31,7 +32,7 @@ const Login = ()=>{
                <form className="loginForm" onSubmit={()=>dispatch({'type':'doneForm'})}>
                    <h3>Login</h3>
                    <label htmlFor="eml">Email:</label>
-                   <input type="email" placeholder="Email" id="eml" className="emailLogin" onChange={()=>dispatch({'type':'doneEmail'})}/>
+                   <input type="email" placeholder="Email" id="eml" className="emailLogin" onChange={(e)=>dispatch({'type':'doneEmail','current':e.target})}/>
                    <label htmlFor="psw">Password:</label>
                    <input type="password" placeholder="Password" id="psw" className="passwordLogin"/>
                    <button>Login</button>
