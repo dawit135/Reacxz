@@ -6,7 +6,7 @@ import './App.css';
 
 const Naver = ()=>{
 	return(
-           <div>
+           <div className="navigation">
              <div>
                 <Link to="/home" className="homeLink">Home</Link>
              </div>

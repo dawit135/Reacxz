@@ -4,6 +4,16 @@
 }
 
 .homeLink{
-   color: black;
+   color: white;
+   font-weight: bolder;
    text-decoration: none;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 70px;
 }
