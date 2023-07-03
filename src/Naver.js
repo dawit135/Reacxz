@@ -11,8 +11,8 @@ const Naver = ()=>{
                 <Link to="/home" className="homeLink">Home</Link>
              </div>
              <div>
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
+                <Link to="/login" className="loginLink">Login</Link>
+                <Link to="/register" className="registerLink">Register</Link>
              </div>
            </div>
 
