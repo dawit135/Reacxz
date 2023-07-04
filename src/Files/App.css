@@ -10,6 +10,69 @@
 }
 
 
+.doneReg{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 20%;
+}
+
+
+.doneReg label{
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+.doneReg h3{
+  text-align: center;
+}
+
+.doneReg button{
+  padding: 5px 10px;
+}
+
+
+.userRegger{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.4px solid grey;
+  font-weight: bolder;
+}
+
+.emailRegger{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.4px solid grey;
+  font-weight: bolder;
+}
+
+
+.passwordRegger{
+
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.4px solid grey;
+  font-weight: bolder;
+
+}
+
+.passwordConfirmationRegger{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.4px solid grey;
+  font-weight: bolder;
+}
+
+.doneReg button{
+   margin-top: 20px;
+   background-color: black;
+   color: white;
+   font-weight: bolder;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
 .emailLogin{
     margin-bottom: 20px;
     margin-top:10px;

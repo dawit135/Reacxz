@@ -1,8 +1,12 @@
+import {login} from '../Files/API.js'
+
+
+
 const LoginFunction = (state,action)=>{
      if(action.type === "doneForm")
      {
         action.current.preventDefault()
-        console.log(state)
+        login(state)
         action.current.target.reset()
         return state
      }
