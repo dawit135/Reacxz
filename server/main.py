@@ -15,19 +15,17 @@ app.add_middleware(
 )
 
 
+@app.post('/login')
+def log(stuff=Body(...)):
+	print(stuff)
+	print("dlsfkmvsdlkfmv")
+	return {"sdvadsv":"adadsvasdv"}
+
+
 @app.post('/register')
 def reg(stuff=Body(...)):
 	print(stuff)
 	return {"advadsv":"advasdvas"}
-
-
-@app.post('/login')
-def log(stuff=Body(...)):
-	print(stuff)
-	return {"sdvadsv":"adadsvasdv"}
-
-
-
 
 
 

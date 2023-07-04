@@ -1,11 +1,7 @@
 //import {useEffect} from 'react';
 
 
-
-export const register = async(newUser)=>{
-	   console.log(newUser)
-	  
-
+export const register = async(newUser)=>{	 
             fetch("http://localhost:9000/register",{
                    method:'POST',
                    headers:{
@@ -13,10 +9,15 @@ export const register = async(newUser)=>{
                    },
                    body:JSON.stringify(newUser)
             })
-
 }
 
 
 export const login = async(existingUser) =>{
-	    console.log(existingUser)
+	    fetch("http://localhost:9000/login",{
+                method:'POST',
+                headers:{
+                     'content-type':'application/json'
+                },
+                body:JSON.stringify(existingUser)
+           })
 }

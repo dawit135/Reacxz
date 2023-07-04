@@ -1,7 +1,6 @@
 import {register} from '../Files/API.js'
 
 
-
 export const RegisterCont = (state,action)=>{
 
      switch(action.type){
@@ -23,10 +22,15 @@ export const RegisterCont = (state,action)=>{
      	   		{
      	   			return {...state,password:"",passwordConfirmation:""}	
      	   		} 
+     	   		else if(state.username === "" || state.email === "" || state.password === "" || state.passwordConfirmation === "")
+     	   		{
+                         console.log("Error ")
+                         return state
+     	   		}
      	   		else{
      	   			register(state)
      	   		     action.current.target.reset()
-     	   		     return state
+     	   		     return {...state,username:"",email:"",password:"",passwordConfirmation:""}
      	   		}
      	   	  	
 		     default:
